@@ -1,5 +1,6 @@
-<%= render :partial => 'spree/admin/shared/product_sub_menu' %>
+<%#= render :partial => 'spree/admin/shared/product_sub_menu' %>
 <%= render :partial => 'spree/admin/shared/product_tabs', :locals => {:current => "Product Sale Prices"} %>
+<%= render :partial => 'spree/admin/shared/index_table_options', locals: { collection: @collection } %>
 <%= csrf_meta_tag %>
 <div id="add-line-item">
   <fieldset>
